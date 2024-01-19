@@ -567,7 +567,7 @@
         <div class="container-fluid main_content_container pt-0">
             <!--sw-main-content start-->
             <div class="sw-main-content sw-main-content2 homepage">
-                <div class="herobanner">
+                <div class="herobanner full-mobile">
                     <!--row start-->
                     <div class="row mbshadow">
 
@@ -1777,7 +1777,7 @@
     <!-- ConditionAppplyModal Modal end-->
 
     <!-- Search Modal Start-->
-    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="ConditionApplyModalLabel"
+    <div class="modal fade centered-popup animate-bottom" id="searchModal" tabindex="-1" aria-labelledby="ConditionApplyModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -1798,14 +1798,16 @@
                             <div class="search-timeline-step" id="step1">
                                 <div class="search-timeline-step-content">
                                     <label for="" class="opacity-50">I am looking for...</label>
-                                    <div class="d-flex align-items-center my-3">
-                                        <button class="btn btn-light searchBy-buttons active">
-                                            <img src="images/airline/package-page/icon-all.svg" alt="">
-                                            All
-                                        </button>
+                                    <div class="d-flex my-3">
+                                        <div>
+                                            <button class="btn btn-light searchBy-buttons active h-100">
+                                                <img src="images/airline/package-page/icon-all.svg" alt="">
+                                                All
+                                            </button>
+                                        </div>
                                         <div class="dropdown mx-2">
-                                            <button class="btn btn-light dropdown-toggle dynamic-dropdown searchBy-buttons" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                                <img src="images/airline/package-page/icon-country.svg" alt="">
+                                            <button class="btn btn-light dropdown-toggle dynamic-dropdown searchBy-buttons  h-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="images/airline/package-page/icon-country.svg" alt="" class="me-2">
                                                 Countries
                                             </button>
                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -1814,10 +1816,12 @@
                                                 <li><a class="dropdown-item" href="javascript:void(0)">France</a></li>
                                             </ul>
                                         </div>
-                                        <button class="btn btn-light searchBy-buttons">
-                                            <img src="images/airline/package-page/icon-pupular-city.svg" alt="">
-                                            Popular Cities
-                                        </button>
+                                        <div>
+                                            <button class="btn btn-light searchBy-buttons h-100 text-start lh-sm">
+                                                <img src="images/airline/package-page/icon-pupular-city.svg" alt="" class="me-2">
+                                                Popular Cities
+                                            </button>
+                                        </div>
                                     </div>
                                     <div class="citySearch-wrapper">
                                         <div class="selectedCountry">
@@ -1958,7 +1962,7 @@
             responsive: [
                 { breakpoint: 1280, settings: { slidesToShow: 4, slidesToScroll: 3, dots: true } },
                 { breakpoint: 1080, settings: { slidesToShow: 3, slidesToScroll: 2, dots: true } },
-                { breakpoint: 767, settings: { slidesToShow: 2, slidesToScroll: 1, dots: true } },
+                { breakpoint: 767, settings: { slidesToShow: 1, slidesToScroll: 1, dots: true } },
             ]
         });
 
@@ -2045,7 +2049,7 @@
                     <label>
                         <input type="radio" name="chooseDay">
                         <div class="normal">${i} Days</div>
-                        <div class="hover">${i - 1} Nights /<br/> ${i} Days</div>
+                        <div class="hover">${i - 1} Nights <br/>/ ${i} Days</div>
                     </label>
                     </div>
                 `;
